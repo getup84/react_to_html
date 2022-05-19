@@ -1,6 +1,6 @@
 const path = require('path');
 const globule = require('globule');
-
+const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const buildDefault = {
@@ -42,9 +42,15 @@ const buildDefault = {
       },
     ],
   },
+  optimization: {
+    minimizer: [new TerserPlugin({
+      extractComments: false,
+    })],
+  },
   plugins: [],
-  target: 'web'
+  target: ['web', 'es5']
 };
+
 const reactFiles = globule.find('src/**/*.jsx', {
   ignore: ['src/**/_*.jsx']
 });
