@@ -6,9 +6,9 @@ import { Footer } from './components/_Footer.jsx';
 import { Body } from './components/_Body.jsx';
 
 const pageMeta = {
-  name: 'home',
-  title: 'トップページ',
-  description: 'サイトのトップページです',
+  name: 'about',
+  title: 'ABOUTページ',
+  description: 'サイトのABOUTページです',
   ogpImage: 'assets/img/ogp.jpg',
   type: 'website',
   url: 'https://example.com/'
@@ -18,8 +18,8 @@ const Content = () => {
   return (
     <>
       <main>
-        <h1>トップページのコンテンツ</h1>
-        <a href="about.html">ABOUT</a>
+        <h1>ABOUTのコンテンツ</h1>
+        <a href="index.html">TOP</a>
         <div id="app"></div>
       </main>
     </>
