@@ -14,6 +14,12 @@ const buildDefault = {
   mode: MODE,
   entry: './src/js/main.js',
   devtool: 'source-map',
+  devServer: {
+    static: {
+      directory: "./src",
+    },
+  },
+  watch: true,
   resolve: {
     extensions: ['.jsx', '.js'],
   },
