@@ -1,5 +1,7 @@
+import log from './log';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../scss/main.scss';
 
 const App = () => {
   return (
@@ -9,3 +11,5 @@ const App = () => {
   )
 };
 ReactDOM.render(<App />, document.getElementById('app'));
+
+log();

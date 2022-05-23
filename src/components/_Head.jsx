@@ -11,6 +11,7 @@ export const Head = (props) => {
       <meta property="og:image" content={props.meta.ogpImage} />
       <meta name="description" content={props.meta.description} />
       <link rel="canonical" href={props.meta.url} />
+      <link rel="stylesheet" href="./css/main.css" />
       <title>{props.meta.title}</title>
     </>
   );
