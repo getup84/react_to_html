@@ -18,9 +18,7 @@ const buildDefault = {
     static: {
       directory: "./src",
     },
-    stats: 'errors-only',
   },
-  watch: true,
   resolve: {
     extensions: ['.jsx', '.js'],
   },
