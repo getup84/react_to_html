@@ -18,7 +18,7 @@ const Content = () => {
   return (
     <>
       <main>
-        <h1>トップページコンテンツ</h1>
+        <h1>トップページのコンテンツ</h1>
         <a href="about.html">ABOUT</a>
         <div id="app"></div>
       </main>
