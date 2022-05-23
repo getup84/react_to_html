@@ -35,8 +35,8 @@ export default () => `
   <body>
     ${renderToStaticMarkup(<Header meta={pageMeta} />)}
     ${renderToStaticMarkup(<Content meta={pageMeta} />)}
-    ${renderToStaticMarkup(<Footer meta={pageMeta} />)}
     ${renderToStaticMarkup(<Body meta={pageMeta} />)}
+    ${renderToStaticMarkup(<Footer meta={pageMeta} />)}
   </body>
 </html>
 `;

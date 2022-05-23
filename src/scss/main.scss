@@ -1,21 +1,17 @@
 // =============== Global ===============
-@use "./global/variables";
-@use "./global/mixin";
-@use "./global/normalize";
-@use "./global/base";
+@import "./global/variables";
+@import "./global/mixin";
+@import "./global/normalize";
+@import "./global/base";
 
-// // =============== Components ===============
-// @use "./components/**/*.scss";
+// =============== Components ===============
+@import "./components/**/*.scss";
 
-// // =============== Layouts ===============
-// @use "./layouts/**/*.scss";
+// =============== Layouts ===============
+@import "./layouts/**/*.scss";
 
-// // =============== Pages ===============
-// @use "./pages/**/*.scss";
+// =============== Pages ===============
+@import "./pages/**/*.scss";
 
-// // =============== Utility ===============
-// @use "./utility/**/*.scss";
-
-body {
-  background-color: #aaa;
-}
+// =============== Utility ===============
+@import "./utility/**/*.scss";
