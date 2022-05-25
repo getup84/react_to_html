@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const MODE = process.env.NODE_ENV;
 const enabledSourceMap = MODE === 'development';
@@ -143,6 +144,12 @@ const buildDefault = {
       },
       svgo: {},
     }),
+    /* ===== Browser Sync ===== */
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['dist'] }
+    })
   ],
   target: ['web', 'es5']
 };
